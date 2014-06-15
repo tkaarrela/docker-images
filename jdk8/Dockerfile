@@ -1,4 +1,4 @@
 FROM tkaarrela/ubuntu:docker
 RUN mkdir -p /opt/java
-RUN wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz /opt/java/jdk-8u5-linux-x64.tar.gz
+RUN wget -o /opt/java/jdk-8u5-linux-x64.tar.gz --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz 
 RUN tar -zxvf /opt/java/jdk-8u5-linux-x64.tar.gz
