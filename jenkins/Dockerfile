@@ -10,3 +10,4 @@ VOLUME ["/jenkins"]
 RUN rm /etc/supervisor/conf.d/supervisord.conf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8080
+EXPOSE 4444
