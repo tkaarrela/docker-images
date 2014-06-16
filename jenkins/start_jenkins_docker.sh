@@ -1,0 +1,1 @@
+docker run -d -p 8080:8080 -p 4444:4444 -e PORT=4444 --privileged --name=jenkins_v3 tkaarrela/jenkins_v3 /usr/bin/supervisord
