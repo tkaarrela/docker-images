@@ -3,7 +3,7 @@ MAINTAINER Tero Kaarrela "tk"
 
 RUN apt-get update && apt-get clean
 RUN apt-get install -qy git
-RUN apt-get install aufs-tools
+RUN apt-get install -qy aufs-tools
 ADD http://updates.jenkins-ci.org/latest/jenkins.war /opt/jenkins/jenkins.war
 RUN ln -sf /jenkins /root/.jenkins
 VOLUME ["/jenkins"]
